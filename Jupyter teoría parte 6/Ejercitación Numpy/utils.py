@@ -22,7 +22,7 @@ def crearMatrix(dimensiones:tuple = None):
     """Genera una matriz de ceros utilizando la función zeros de numpy"""
     if dimensiones:
         from numpy import zeros
-        matrix = zeros(dimensiones)
+        matrix = zeros(dimensiones,int)
         del zeros
         return matrix
     else:
